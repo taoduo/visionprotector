@@ -1,0 +1,11 @@
+/*css outside the frame*/
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#timerFrame{
+	position: absolute;
+	width: 500px;
+	height: 100%;
+}

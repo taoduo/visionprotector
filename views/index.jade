@@ -1,5 +1,9 @@
-extends layout
+extends indexHead
 
 block content
-  h1= title
-  p Welcome to #{title}
+	iframe#timerFrame(src='timer.html', allowtransparency='true', frameborder='0')
+	script(type="text/javascript").
+		//adjust the frame position
+		var windowWidth = $(window).width();
+		var frameWidth = $("#timerFrame").width();
+		$("#timerFrame").offset({"left":(windowWidth - frameWidth)/2});
